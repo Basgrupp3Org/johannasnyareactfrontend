@@ -9,7 +9,7 @@ import {
 import BudgetPage from './Components/Budget/BudgetPage'
 import HistoryPage from './Components/History/HistoryPage'
 import HomePage from './Components/Home/HomePage'
-import Burger from './Components/Burger/Burger'
+
 
 
 function App() {
