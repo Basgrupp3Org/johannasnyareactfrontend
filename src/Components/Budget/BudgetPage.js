@@ -3,7 +3,7 @@ import React from 'react'
 export default function BudgetPage() {
     return (
         <div>
-            <p>Budget</p>
+            <h3>Budget</h3>
         </div>
     )
 }
