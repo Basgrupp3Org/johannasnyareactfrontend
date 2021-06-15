@@ -1,12 +1,23 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 
 export default function BudgetCategory(props) {
+
+    const [total, setTotal] = useState(); 
+
+    const CountTotal = (props) => {
+        
+        let localTotal = 0;
+
+        
+
+
+    }
     return (
         <div>
             <label>{props.headline}</label>
-
-            <p>{props.data}</p>
+            <label>{total}</label>
+           
             
         </div>
     )

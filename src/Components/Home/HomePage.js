@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import Budget from './BudgetComponent'
+import Budget from './Budget'
+import './HomePage.css'
 
 
 export default function HomePage() {
