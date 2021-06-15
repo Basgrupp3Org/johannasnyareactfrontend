@@ -1,0 +1,13 @@
+.headlines{
+    display: flex;
+    flex-direction: row;
+    column-gap: 70px;
+    
+}
+.center{
+    display: block;
+    text-align: center;
+    line-height: 150%;
+    font-size: .85em;
+}
+
