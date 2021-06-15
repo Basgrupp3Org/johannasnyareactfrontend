@@ -1,0 +1,27 @@
+{
+    "datumtill": "2021-06-14",
+    "datumfrån": "2021-07-14",
+    "inkomst": 30000,
+    "bostad": 3000,
+    "fordon": 3000,
+    "sparmål": 1000,
+    "rörliga": [
+        {
+            "namn": "enKategori",
+            "attSpendera": 5000,
+            "spenderat": 100
+        },
+        {
+            "namn": "enAnnanKategori",
+            "attSpendera": 2000,
+            "spenderat": 200
+        }
+    ],
+    "fasta": [
+        {
+            "namn": "lån",
+            "summa": 1000
+        }
+    ],
+    "obudgeterat": 9200
+}
