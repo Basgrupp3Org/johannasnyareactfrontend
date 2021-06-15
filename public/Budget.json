@@ -4,7 +4,18 @@
     "inkomst": 30000,
     "bostad": 3000,
     "fordon": 3000,
-    "sparmål": 1000,
+    "sparmål": [
+        {
+            "namn": "Resa",
+            "attSpara": 5000,
+            "sparat": 100
+        },
+        {
+            "namn": "Fiskespö",
+            "attSpara": 2000,
+            "sparat": 50
+        }
+    ],
     "rörliga": [
         {
             "namn": "enKategori",
@@ -20,6 +31,10 @@
     "fasta": [
         {
             "namn": "lån",
+            "summa": 1000
+        },
+        {
+            "namn": "lån2",
             "summa": 1000
         }
     ],
