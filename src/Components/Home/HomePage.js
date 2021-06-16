@@ -48,11 +48,19 @@ export default function HomePage() {
             });
     }, [])
     return (
-        <div>
+        <div className="fullPage">
 
-            {budgetData ? <Budget data={budgetData} /> : "Laddar data.."}
+            <div className="topPart">
+                {budgetData ? <Budget data={budgetData} /> : "Laddar data.."}
+
+            </div>
             <hr />
-            {purchaseData ? <LastTransaction data={purchaseData} /> : "Laddar data.."}
+            <div className="LowerLeft">
+                {purchaseData ? <LastTransaction data={purchaseData} /> : "Laddar data.."}
+            </div>
+            <div className="LowerRight">
+
+            </div>
         </div>
 
 
