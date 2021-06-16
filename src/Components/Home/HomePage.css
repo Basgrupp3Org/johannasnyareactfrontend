@@ -1,3 +1,5 @@
+
+
 .headlines{
     display: flex;
     flex-direction: row;
@@ -35,3 +37,10 @@
     column-gap: 500px;
 }
 
+
+
+.LowerLeft{
+    height: auto;
+    width: 50%;
+    border-right: 2px; border-color: black;
+}
