@@ -8,8 +8,8 @@ export default function FixedCosts(props) {
     useEffect(() => {
         let localTotal = 0;
 
-        console.log(props.data.fasta)
-        props.data.fasta.forEach((element, i) => localTotal += (element.summa));
+        // console.log(props.data.fasta)
+        // props.data.fasta.forEach((element, i) => localTotal += (element.summa));
 
 
 
