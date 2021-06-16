@@ -45,20 +45,6 @@ function App() {
 
 
 
-          {/* <nav>
-            <ul>
-              <li>
-                <Link to="/home">Home</Link>
-              </li>
-              <li>
-                <Link to="/history">History</Link>
-              </li>
-              <li>
-                <Link to="/budget">Budget</Link>
-              </li>
-            </ul>
-          </nav> */}
-
 
           <Switch>
             <Route path="/history">
