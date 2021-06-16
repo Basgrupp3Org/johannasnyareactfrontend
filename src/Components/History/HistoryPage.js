@@ -1,18 +1,17 @@
-import React from 'react'
-import '../History/HistoryPage.css'
-import Budgets from './components/Budgets'
-import Transactions from './components/Transactions'
+import React from "react";
+import "../History/HistoryPage.css";
+import Budgets from "./components/Budgets";
+import Transactions from "./components/Transactions";
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   NavLink,
   useParams,
-  useRouteMatch
+  useRouteMatch,
 } from "react-router-dom";
 
 export default function HistoryPage() {
-
   let { path, url } = useRouteMatch();
 
   return (
@@ -22,11 +21,15 @@ export default function HistoryPage() {
           <nav className="history-nav">
             <ul>
               <li>
-                <NavLink to="/history" className="budgets-btn btn">Budgets</NavLink>
+                <NavLink to="/history" className="budgets-btn btn">
+                  Budgets
+                </NavLink>
               </li>
               <div className="line1"></div>
               <li>
-                <NavLink to="/transactions" className="transactions-btn btn">Transactions</NavLink>
+                <NavLink to="/transactions" className="transactions-btn btn">
+                  Transactions
+                </NavLink>
               </li>
             </ul>
             <hr />
@@ -40,9 +43,8 @@ export default function HistoryPage() {
               <Transactions />
             </Route>
           </Switch>
-
         </div>
       </Router>
     </>
-  )
+  );
 }
