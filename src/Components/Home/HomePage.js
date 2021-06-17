@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Budget from './Budget'
 import './HomePage.css'
 import LastTransaction from './LastTransaction'
+import BigSavingGoal from './BigSavingGoal'
 
 
 export default function HomePage() {
@@ -41,7 +42,7 @@ export default function HomePage() {
         })
             .then((data) => data.json())
             .then((data) => {
-                console.log(data)
+                setPurchaseData(data)
             })
             .catch((err) => {
                 console.error(err);
@@ -55,11 +56,13 @@ export default function HomePage() {
 
             </div>
             <hr />
-            <div className="LowerLeft">
+            <div className="LowerPart">
+            <div className="LeftLowerPart">
                 {purchaseData ? <LastTransaction data={purchaseData} /> : "Laddar data.."}
             </div>
-            <div className="LowerRight">
-
+            <div className="RightLowerPart">
+                {budgetData ? <BigSavingGoal data={budgetData} /> : "Laddar data..."}
+            </div>
             </div>
         </div>
 

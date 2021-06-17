@@ -15,13 +15,13 @@ export default function SavingGoal(props) {
         <div>
             <label>Sparmål</label>
 
-            {/* <div>
+            <div>
                 {props.data.sparmål.map((x) => (
                     <div>
                         <label>{x.namn}: Att Spara: {x.attSpara} Sparat: {x.sparat}</label>
                     </div>
                 ))}
-            </div> */}
+            </div>
 
 
         </div>
