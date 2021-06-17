@@ -13,7 +13,7 @@ export default function VariableCosts(props) {
         <div>
             <label>Rörliga Kostnader</label>
 
-            {/* {
+            {
                 props.data.rörliga.map((x) => (
                     <div>
                         <label>{x.namn}</label>
@@ -24,7 +24,7 @@ export default function VariableCosts(props) {
 
                     </div>
                 ))
-            } */}
+            }
 
         </div>
     )
