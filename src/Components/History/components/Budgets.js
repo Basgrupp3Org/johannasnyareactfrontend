@@ -1,21 +1,14 @@
 import React from "react";
+import HistorySidebar from "./HistorySidebar";
 
-const Budgets = () => {
+const Budgets = (props) => {
   return (
     <>
       <div className="history-sidebar">
-        <p>2021</p>
-        <p>2020</p>
-        <p>2019</p>
-        <p>2018</p>
-        <p>2017</p>
-        <div className="more">
-          <p>Jan</p>
-          <p>Jan</p>
-          <p>Jan</p>
-          <p>Jan</p>
-          <p>Jan</p>
-        </div>
+        <HistorySidebar budgets={props.name} />
+        <HistorySidebar name="2020" />
+        <HistorySidebar name="2019" />
+        <HistorySidebar name="2018" />
       </div>
       <div className="line2"></div>
 
