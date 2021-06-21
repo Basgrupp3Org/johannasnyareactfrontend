@@ -10,7 +10,7 @@ export default function FixedCosts(props) {
         let localTotal = 0;
 
         console.log(props.data.fasta)
-        props.data.fasta.forEach((element, i) => localTotal += (element.summa));
+        // props.data.fasta.forEach((element, i) => localTotal += (element.summa));
 
 
 
