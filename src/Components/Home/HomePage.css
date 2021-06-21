@@ -86,6 +86,21 @@
     
 }
 
+.LabelSaving1invaraiblecost{
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 10px;
+    padding-top: 10px;
+   color: gray;
+}
+
+.LabelSaving2invaraiblecost{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
 .purchaseName{
     color: gray;
 }
@@ -135,4 +150,19 @@
 
 .ButtonDiv{
     text-align: center;
+}
+
+
+.rpm__registerpurchase {
+    display: flex;
+    flex-direction: column;
+}
+
+.rpm__submitpurchase {
+    margin-top: 20px;
+}
+
+.rpm__purchasetext {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 48px;
 }
