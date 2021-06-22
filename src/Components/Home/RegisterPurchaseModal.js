@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     position: "absolute",
     width: 800,
-    backgroundColor: theme.palette.background.paper,
+    backgroundColor: '#2A9D8F',
     border: "2px solid #000",
     boxShadow: theme.shadows[5],
     padding: theme.spacing(2, 4, 3),
@@ -154,6 +154,7 @@ function RegisterPurchaseModal() {
             {summary}
             <input
               type="text"
+              className="modalinputs"
               name="purchaseName"
               pattern="^[a-zåäöé]{0,19}$"
               placeholder="Purchase Name"
@@ -164,20 +165,22 @@ function RegisterPurchaseModal() {
 
             <input
               placeholder="Price"
+              className="modalinputs"
               type="number"
               value={price}
               onChange={(e) => setPrice(e.target.value)}
               onKeyDown={(evt) => ["e", "E", "+", "-"].includes(evt.key) && evt.preventDefault()}
             />
 
-            <Input
+            <input
               placeholder="Date"
+              className="modalinputs"
               type="date"
               value={date}
               onChange={(e) => setDate(e.target.value)}
             />
 
-            <select defaultValue={'default'} onChange={handleBudgetChange}>
+            <select defaultValue={'default'} className="modalinputs" onChange={handleBudgetChange}>
               <option value="default" disabled hidden>
                 --Choose Budget--
               </option>
@@ -185,7 +188,7 @@ function RegisterPurchaseModal() {
                 <option key={index} value={x.Id}>{x.BudgetName}</option>
               ))}
             </select>
-            <select defaultValue={'default'} onChange={(e) => setSelectedCategory(e.target.value)}>
+            <select defaultValue={'default'} className="modalinputs" onChange={(e) => setSelectedCategory(e.target.value)}>
               <option value="default" disabled hidden>
                 --Choose Category--
               </option>
@@ -198,7 +201,7 @@ function RegisterPurchaseModal() {
 
             <button
               variant="contained"
-              className="rpm__submitpurchase"
+              className="modalinputssubmit"
             //   onClick={handlePurchase}
             >
               Submit

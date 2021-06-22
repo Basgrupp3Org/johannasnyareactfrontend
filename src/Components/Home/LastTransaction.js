@@ -20,14 +20,14 @@ export default function LastTransaction(props) {
 
         </div>
            
-{/* 
+
 
              {props.data.purchase.map((x) =>
                 <div>
                     <label className="purchaseName">{x.köpNamn} </label> 
                     <label className="dateforpurchase">{x.pris}kr <label className="priceforpurchase">{x.datum} </label></label>
                 </div>
-            )}  */}
+            )} 
             <div className="ButtonDiv">
             {/* <button className="btn" onClick={}>Lägg till köp</button> */}
 
