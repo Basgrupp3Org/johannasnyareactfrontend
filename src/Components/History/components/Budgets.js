@@ -1,24 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
+import HistorySidebar from "./HistorySidebar";
+import BudgetData from "./BudgetData";
 
-const Budgets = () => {
+export default function Budgets() {
+  const [active, setActive] = useState("");
   return (
     <>
       <div className="history-sidebar">
-        <p>2021</p>
-        <p>2020</p>
-        <p>2019</p>
-        <p>2018</p>
-        <p>2017</p>
-        <div className="more">
-          <p>Jan</p>
-          <p>Jan</p>
-          <p>Jan</p>
-          <p>Jan</p>
-          <p>Jan</p>
-        </div>
+        <ul>
+          <li>
+            <button className="budget-btn" onClick={() => active ? setActive("") : setActive("FirstCard")}>2021</button>
+            {active === "FirstCard" && <HistorySidebar data={BudgetData} cardIndex={0} />}
+          </li>
+          <li>
+            <button className="budget-btn" onClick={() => active ? setActive("") : setActive("SecondCard")}>2020</button>
+            {active === "SecondCard" && <HistorySidebar data={BudgetData} cardIndex={1} />}
+          </li>
+          <li>
+            <button className="budget-btn" onClick={() => active ? setActive("") : setActive("ThirdCard")}>2019</button>
+            {active === "ThirdCard" && <HistorySidebar data={BudgetData} cardIndex={2} />}
+          </li>
+        </ul>
+
       </div>
       <div className="line2"></div>
-
       <div className="history-content">
         <h2>Budget för Maj</h2>
         <div className="from-to-date">
@@ -75,5 +80,3 @@ const Budgets = () => {
     </>
   );
 };
-
-export default Budgets;

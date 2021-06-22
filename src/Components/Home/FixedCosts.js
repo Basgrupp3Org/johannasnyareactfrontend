@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import './HomePage.css'
 
 export default function FixedCosts(props) {
 
@@ -8,7 +9,7 @@ export default function FixedCosts(props) {
     useEffect(() => {
         let localTotal = 0;
 
-        // console.log(props.data.fasta)
+        console.log(props.data.fasta)
         // props.data.fasta.forEach((element, i) => localTotal += (element.summa));
 
 
@@ -29,12 +30,12 @@ export default function FixedCosts(props) {
 
     return (
         <div className="headlines2">
-            <label>Fasta Utgifter</label>
+            <label >Fasta Utgifter</label>
 
-            <label>Total: {total}</label>
-            <label>Bostad: {props.data.bostad}</label>
-            <label>Fordon: {props.data.fordon}</label>
-            <label>Övrigt: {total1}</label>
+            <label className="CostsLabels">Total: {total}</label>
+            <label className="CostsLabels">Bostad: {props.data.bostad}</label>
+            <label className="CostsLabels">Fordon: {props.data.fordon}</label>
+            <label className="CostsLabels">Övrigt: {total1}</label>
 
         </div>
     )
