@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: column;
     width: 50%;
+    height: 100px;
     
 }
 
@@ -13,7 +14,7 @@
 
 .accordion {
     background-color: #2A9D8F;
-    color:black;
+    color:#fff;
     cursor: pointer;
     padding: 10px;
     display: flex;
@@ -24,10 +25,12 @@
 }
 
 
-.accordion:hover,
+/* .accordion:hover,
 .accordion.active {
-    background-color: #8bb9b4 ;
-}
+    background-color: #2A9D8F ;
+     height: 30px; 
+    padding: 10px;
+} */
 
 
  .accordion__title {
@@ -48,9 +51,10 @@
 
 .accordion__content {
 
-    background-color: #2A9D8F;
+    background-color: white;
     overflow: hidden;
     transition: max-height 0.6s ease;
+    border: black;
 
 }
 
@@ -59,4 +63,72 @@
     font-weight: 400;
     font-size: 14px;
     padding: 14px;
-}
+ }
+ /* .lowerpart {
+   display: block;
+   margin: 50px auto;
+   width: 40%;
+   padding: 25px;
+    
+     
+    
+ 
+   
+} */
+
+
+/* .lowerrightpart{
+    display: block;
+    margin: 50px auto;
+    width: 15%;
+    height: 50%;
+} */
+
+  
+/*.buttons {
+    padding: 50px 100px;
+    overflow: hidden; /* for clearfix */
+   
+   .btn1, .btn2 {
+     color: black;
+     font-size: 20px;
+     padding: 10px;
+     border-radius: 10px;
+     margin: 230px;
+     position: static;
+     background: linear-gradient(#fff, #2a9d8f);
+     
+     
+   }
+   /* .btn1 {
+    width: 150px;
+    height: 30px;
+    border-radius: 25px;
+    background: linear-gradient(#fff, #2a9d8f);
+    font-size: 20px;
+    color: black;
+    margin: 5px;
+    padding: 25px;
+    
+    margin-left: 750px;
+    
+     */
+
+     
+   /* }
+   .btn2 {
+    width: 150px;
+    height: 30px;
+    border-radius: 25px;
+    background: linear-gradient(#fff, #2a9d8f);
+    font-size: 20px;
+    color: black;
+    margin: 5px;
+    padding: 25px;
+    margin-left: 350px;
+   
+    
+    
+    
+   }
+ */
