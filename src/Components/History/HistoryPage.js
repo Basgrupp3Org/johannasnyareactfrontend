@@ -21,13 +21,13 @@ export default function HistoryPage() {
           <nav className="history-nav">
             <ul>
               <li>
-                <NavLink to="/history" className="budgets-btn btn">
+                <NavLink to="/history" className="history-nav-btn">
                   Budgets
                 </NavLink>
               </li>
               <div className="line1"></div>
               <li>
-                <NavLink to="/transactions" className="transactions-btn btn">
+                <NavLink to="/transactions" className="history-nav-btn">
                   Transactions
                 </NavLink>
               </li>

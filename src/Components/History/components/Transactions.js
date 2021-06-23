@@ -9,12 +9,12 @@ const Transactions = () => {
           <input type="date" className="filter-input" />
           <label>Datum till:</label>
           <input type="date" className="filter-input" />
-          <label>Välj kategori:</label>
-          <input type="text" className="filter-input" placeholder="Välj..." />
+          <label>Kategori:</label>
+          <input type="text" className="filter-input" placeholder="Välj" />
           <button className="filter-btn">Filtrera</button>
         </form>
       </div>
-      <input type="text" className="search-table" placeholder="Sök..."></input>
+      <input type="text" className="search-table" placeholder="Sök"></input>
       <div className="table-wrapper">
         <table className="transactions-table">
           <tr>
