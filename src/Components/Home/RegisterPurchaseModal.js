@@ -184,17 +184,17 @@ function RegisterPurchaseModal() {
               <option value="default" disabled hidden>
                 --Choose Budget--
               </option>
-              {budgets.map((x, index) => (
+              {/* {budgets.map((x, index) => (
                 <option key={index} value={x.Id}>{x.BudgetName}</option>
-              ))}
+              ))} */}
             </select>
             <select defaultValue={'default'} className="modalinputs" onChange={(e) => setSelectedCategory(e.target.value)}>
               <option value="default" disabled hidden>
                 --Choose Category--
               </option>
-              {categories.length
+              {/* {categories.length
                 ? categories.map((x, index) => <option key={index} value={x.Id}>{x.Name}</option>)
-                : undefined}
+                : undefined} */}
 
             </select>
 

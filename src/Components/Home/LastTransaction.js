@@ -18,7 +18,7 @@ export default function LastTransaction(props) {
         <div className="HeaderLabel">
         <label className="BuyLabel">Senaste transaktionerna</label>
 
-        </div>
+        {/* </div>
            
 
 
@@ -32,7 +32,7 @@ export default function LastTransaction(props) {
             {/* <button className="btn" onClick={}>Lägg till köp</button> */}
 
             <RegisterPurchaseModal />
-            </div>
+            </div> 
 
             
 

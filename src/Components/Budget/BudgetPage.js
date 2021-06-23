@@ -1,6 +1,8 @@
 
 import Accordion from './Accordion'
 import './BudgetPage.css'
+import CreateCategoryModal from './CreateCategoryModal';
+import CreateBudgetModal from './CreateBudgetModal';
 
 
 
@@ -10,28 +12,22 @@ function BudgetPage() {
         <div>
             <Accordion
                 title="Datum"
-                content="16-06-2021"
+                content="16-06-2021 - 31-06-2021"
             />
-
-            <Accordion
-                title="Sparmål"
-                content="lägg till "
-
-
-            />
-
 
 
             <Accordion
                 title="Bostad      3000kr/mån"
-                content="3000:- Bosta" />
+                content="3000:- Bostad"
+                />
+                
 
             <Accordion
                 title="Fordon      3000kr/mån"
-                content="1000:-    Vovlo/Rejmes" />
+                content="1000:-    Volvo" />
 
             <Accordion
-                title="Rörliga kostnader    8000kr"
+                title="Rörliga kostnader    8000kr/mån"
                 content="500:-    SF Bio" />
 
             <Accordion
@@ -48,9 +44,15 @@ function BudgetPage() {
             />
 
 
-            <div clas="buttons">
-                <a class="btn1" >Lägg till Budget</a>
-                <a class="btn2">Lägg till Kategori</a>
+            <div className="buttons">
+            
+                  <CreateCategoryModal />
+
+                  <CreateBudgetModal />
+                 
+               
+                
+
             </div>
 
 

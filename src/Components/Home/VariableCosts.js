@@ -14,16 +14,16 @@ export default function VariableCosts(props) {
             <label>Rörliga Kostnader</label>
 
             {
-                props.data.rörliga.map((x) => (
-                    <>
-                        <label className="LabelSaving1invaraiblecost">{x.namn}</label>
-                        <div className="LabelSaving2invaraiblecost" style={{ width: 80, height: 75 }}>
-                            <CircularProgressbar value={percentage(x.spenderat, x.attSpendera)} text={`${percentage(x.spenderat, x.attSpendera)}%`} />
-                        </div>
+                // props.data.rörliga.map((x) => (
+                //     <>
+                //         <label className="LabelSaving1invaraiblecost">{x.namn}</label>
+                //         <div className="LabelSaving2invaraiblecost" style={{ width: 80, height: 75 }}>
+                //             <CircularProgressbar value={percentage(x.spenderat, x.attSpendera)} text={`${percentage(x.spenderat, x.attSpendera)}%`} />
+                //         </div>
 
 
-                    </>
-                ))
+                //     </>
+                // ))
             }
 
         </div>
