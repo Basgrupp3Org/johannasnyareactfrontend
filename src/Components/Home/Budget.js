@@ -8,14 +8,15 @@ import VariableCosts from './VariableCosts'
 
 
 export default function Budget(props) {
+    
     return (
         <div>
-            <label className="center">{props.data.namn}</label>
+            <label className="budget__centercontent">{props.data.namn}</label>
 
-            <p className="center" className="dates">{props.data.datumtill} - {props.data.datumfrån} </p>
+            <p className="budget__centercontent" className="budget__dates">{props.data.datumtill} - {props.data.datumfrån} </p>
 
 
-            <div className="headlines">
+            <div className="budget__headlines_div">
 
 
                 <Income data={props.data} />

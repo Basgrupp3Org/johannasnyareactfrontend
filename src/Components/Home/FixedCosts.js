@@ -10,7 +10,7 @@ export default function FixedCosts(props) {
         let localTotal = 0;
 
         console.log(props.data.fasta)
-        // props.data.fasta.forEach((element, i) => localTotal += (element.summa));
+        props.data.fasta.forEach((element, i) => localTotal += (element.summa));
 
 
 
@@ -29,14 +29,18 @@ export default function FixedCosts(props) {
 
 
     return (
-        <div className="headlines2">
-            <label >Fasta Utgifter</label>
+        <div className="fixedcosts__fullpage">
+            <div className="fixedcosts__headline_div">
+                <label >Fasta Utgifter</label>
+            </div>
+            <div className="fixedcosts__content">
 
-            <label className="CostsLabels">Total: {total}</label>
-            <label className="CostsLabels">Bostad: {props.data.bostad}</label>
-            <label className="CostsLabels">Fordon: {props.data.fordon}</label>
-            <label className="CostsLabels">Övrigt: {total1}</label>
+                <label className="fixedcosts__labels">Total: {total}</label>
+                <label className="fixedcosts__labels">Bostad: {props.data.bostad}</label>
+                <label className="fixedcosts__labels">Fordon: {props.data.fordon}</label>
+                <label className="fixedcosts__labels">Övrigt: {total1}</label>
 
+            </div>
         </div>
     )
 }

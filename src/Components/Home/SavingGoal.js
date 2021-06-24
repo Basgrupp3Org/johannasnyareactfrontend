@@ -2,27 +2,22 @@ import React, { useEffect, useState } from 'react'
 
 export default function SavingGoal(props) {
 
-
-
-    useEffect(() => {
-
-
-
-    }, [])
-
-
     return (
-        <div>
-            <label>Sparmål</label>
 
-            <div>
-                {props.data.sparmål.map((x) => (
-                    <div>
-                        <label>{x.namn}: Att Spara: {x.attSpara} Sparat: {x.sparat}</label>
-                    </div>
-                ))}
+        <div className="savinggoal__fullpage">
+            <div className="savinggoal__headerdiv">
+                <label className="savinggoal__title_label">Sparmål</label>
             </div>
 
+            <div className="savinggoal__contentdiv">
+
+                {props.data.sparmål.map((x) => (
+                    <div className="savinggoal__divformap">
+                        <label className="savinggoal__content_label">{x.namn}</label> <label className="savinggoal__content_label2"> Att Spara: {x.attSpara}</label> <label className="savinggoal__content_label3">Sparat: {x.sparat}</label>
+                    </div>
+                ))}
+
+            </div>
 
         </div>
     )

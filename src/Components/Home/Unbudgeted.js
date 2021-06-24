@@ -4,7 +4,7 @@ import React from 'react'
 export default function Unbudgeted(props) {
     return (
         <div>
-            <label className="headlines2">Obudgeterat</label>
+            <label className="unbudgeted__headlines_label">Obudgeterat</label>
 
             <label>{props.data.obudgeterat}</label>
 

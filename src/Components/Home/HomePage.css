@@ -1,65 +1,78 @@
 
-.headlines{
+.budget__headlines_div{
     display: flex;
     flex-direction: row;
     column-gap: 70px;
     color: gray;
 }
-.headlines2{
-    display: flex;
-    flex-direction: column;
-    column-gap: 70px;
-    color: gray;
-    
-}
 
-.center{
+.budget__centercontent{
     display: block;
     text-align: center;
     line-height: 150%;
     font-size: 1.5em;
     color: aquamarine;
 }
-.dates{
+.budget__dates{
     display: block;
     text-align: center;
     line-height: 150%;
     font-size: 1.2em;
     color: gray;
     word-spacing: 40px;
+    padding-bottom: 10px;
   
 }
 
-.topPart{
+.unbudgeted__headlines_label{
+    display: flex;
+    flex-direction: column;
+    column-gap: 70px;
+    color: gray;
+    margin-bottom: 15px;
+}
+
+.income__headerdiv{
+    display: flex;
+    flex-direction: column;
+    column-gap: 70px;
+    color: gray;
+    margin-bottom: 15px;
+}
+
+.income__contentdiv{
+    
+}
+
+
+
+.homepage__topPart_div{
     padding: 20px;
 }
 
-.lasttransactionandsavings{
-    display: flex;
-    flex-direction: row;
-    column-gap: 500px;
-}
 
-.LowerPart{
+
+.homepage__LowerPart_div{
     display:flex;
     flex-direction: row;
+    padding: 10px;
 
 }
 
-.LeftLowerPart {
+.homepage__LeftLowerPart_div {
 
     border-right: 2px solid white;
-    width: 50%;
+    width: 30%;
     padding:10px;
    
    
    
 }
 
-.RightLowerPart{
+.homepage__RightLowerPart_div{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 70%;
     text-align: center;
     padding: 10px;
    align-items: center;
@@ -68,25 +81,80 @@
 
 }
 
-.LabelSaving1{
-   padding-bottom: 10px;
-   color: gray;
+.savinggoal__headerdiv{
+    margin-bottom: 15px;
+    text-align: center;
 }
 
-.LabelSaving2{
-    padding-top: 10px;
-    padding-bottom: 10px;
+.savinggoal__contentdiv{
+    
+}
+.savinggoal__divformap{
+    border: 1px solid lightgray;
+    padding: 8px;
+}
+
+.savinggoal__content_label{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
     
 }
 
-.LabelSaving3{
-    padding-top: 10px;
-    padding-bottom: 10px;
+.savinggoal__content_label2{
+    display: flex;
+    flex-direction: column;
+    
+}
+.savinggoal__content_label3{
+    
+}
+
+.bigsavinggoal__headerdiv{
+    text-align: center;
+    
+}
+
+.bigsavinggoal__title_label {
+  color: aquamarine;
+}
+
+.bigsavinggoal__progressbar{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.bigsavinggoal__contentdiv{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.bigsavinggoal__contentdiv2{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.bigsavinggoal__LabelSaving1{
+    margin-bottom: 10px;;
     color: gray;
+}
+
+.bigsavinggoal__LabelSaving2{
+    padding-top: 15px;
+    padding-bottom: 10px;
     
 }
 
-.LabelSaving1invaraiblecost{
+.bigsavinggoal__LabelSaving3{
+    margin-top: 15px;
+    color: gray;
+}
+
+
+.variablecosts__name_label{
     display: flex;
     justify-content: flex-start;
     padding-right: 10px;
@@ -94,24 +162,36 @@
    color: gray;
 }
 
-.LabelSaving2invaraiblecost{
+.variablecosts__progressbar_div{
     padding-top: 10px;
     padding-bottom: 10px;
     width: 100%;
     display: flex;
     justify-content: flex-end;
 }
-.purchaseName{
+
+.lasttransactionandsavings{
+    display: flex;
+    flex-direction: row;
+    column-gap: 500px;
+}
+
+.lasttransaction__ButtonDiv{
+    text-align: center;
+}
+
+
+.lasttransaction__purchaseName_label{
     color: gray;
 }
 
-.priceforpurchase{
+.lasttransaction__priceforpurchase_label{
      color: gray;
      display: flex;
      align-items:flex-end;
 }
 
-.dateforpurchase{
+.lasttransaction__dateforpurchase_label{
     color: gray;
     display: flex;
     flex-direction: column;
@@ -119,22 +199,44 @@
    padding-bottom: 15px;
 }
 
-.LowerRight{
-    border-right: thick solid #ff0000;
+.lasttransaction__contentdiv:hover{
+    border: 1px solid lightgray;
 }
 
-.BuyLabel{
+
+
+.lasttransaction__BuyLabel_label{
    color: aquamarine;
 
 }
 
 
-.HeaderLabel{
+
+.lasttransaction__HeaderLabel_div{
     text-align: center;
 }
 
-.CostsLabels{
+.fixedcosts__labels{
     border: 1px solid lightgray;
+    padding: 8px;
+}
+
+.fixedcosts__headline_div{
+    
+    margin-bottom: 15px;
+}
+
+.fixedcosts__fullpage{
+    display: flex;
+    flex-direction: column;
+    
+}
+.fixedcosts__content{
+    display: flex;
+    flex-direction: column;
+    column-gap: 70px;
+    color: gray;
+    padding-top: 5px;
 }
 
 
@@ -148,10 +250,8 @@
   
 }
 
-.ButtonDiv{
-    text-align: center;
-}
 
+/* Modal */
 
 .rpm__registerpurchase {
     display: flex;
