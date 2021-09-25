@@ -1,6 +1,13 @@
 import React, { useEffect, useState } from 'react'
 
 export default function SavingGoal(props) {
+    const [savingGoal, setSavingGoal] = useState([])
+
+    useEffect(() => {
+        if(props.data.sparmål){
+            setSavingGoal(props.data.sparmål)
+        }
+    }, [props.data.sparmål])
 
     return (
 
@@ -11,8 +18,8 @@ export default function SavingGoal(props) {
 
             <div className="savinggoal__contentdiv">
 
-                {props.data.sparmål.map((x) => (
-                    <div className="savinggoal__divformap">
+                {savingGoal.map((x, i) => (
+                    <div key={i}className="savinggoal__divformap">
                         <label className="savinggoal__content_label">{x.namn}</label> <label className="savinggoal__content_label2"> Att Spara: {x.attSpara}</label> <label className="savinggoal__content_label3">Sparat: {x.sparat}</label>
                     </div>
                 ))}
