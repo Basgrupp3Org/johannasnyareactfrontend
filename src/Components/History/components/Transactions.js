@@ -17,18 +17,22 @@ const Transactions = () => {
       <input type="text" className="search-table" placeholder="Sök"></input>
       <div className="table-wrapper">
         <table className="transactions-table">
-          <tr>
-            <th>Namn</th>
-            <th>Pris</th>
-          </tr>
-          <tr>
-            <td>Mat</td>
-            <td>500</td>
-          </tr>
-          <tr>
-            <td>Glass</td>
-            <td>25</td>
-          </tr>
+          <thead>
+            <tr>
+              <th>Namn</th>
+              <th>Pris</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mat</td>
+              <td>500</td>
+            </tr>
+            <tr>
+              <td>Glass</td>
+              <td>25</td>
+            </tr>
+          </tbody>
         </table>
       </div>
     </>

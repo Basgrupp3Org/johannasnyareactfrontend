@@ -4,7 +4,7 @@ const HistorySidebar = ({ data, cardIndex }) => {
   return (
     <div>
       {data[cardIndex].map(item => (
-        <div className="card">
+        <div key={cardIndex} className="card">
           <ul>
             <li>{item.budget1}</li>
             <li>{item.budget2}</li>
