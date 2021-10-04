@@ -22,6 +22,7 @@ export default function VariableCosts(props) {
             <label>Rörliga Kostnader</label>
 
             {
+
                 variableCosts.map((x, i) => (
                    <div key={i}>
                         <label  className="variablecosts__name_label">{x.namn}</label>
@@ -31,6 +32,7 @@ export default function VariableCosts(props) {
                    </div>
                    
                 ))
+
             }
 
         </div>

@@ -17,10 +17,12 @@ export default function LastTransaction(props) {
 
         <>
 
+
             <div className="lasttransaction__HeaderLabel_div">
                 <label className="lasttransaction__BuyLabel_label">Senaste transaktionerna</label>
 
             </div>
+
 
 
 
@@ -35,6 +37,7 @@ export default function LastTransaction(props) {
 
                 <RegisterPurchaseModal />
             </div>
+
 
 
 

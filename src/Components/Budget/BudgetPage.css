@@ -5,32 +5,27 @@
 .accordion__section {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 35%;
     height: 100px;
+    padding: 10px;
+    position: relative; right: -100px;
+    position: relative; bottom: -100px;
+    
     
 }
-
 
 
 .accordion {
     background-color: #2A9D8F;
     color:#fff;
     cursor: pointer;
-    padding: 10px;
+    padding: 5px;
     display: flex;
     align-items: center;
     border: black;
     outline: none;
     transition: background-color 0.6s ease;
 }
-
-
-/* .accordion:hover,
-.accordion.active {
-    background-color: #2A9D8F ;
-     height: 30px; 
-    padding: 10px;
-} */
 
 
  .accordion__title {
@@ -40,95 +35,61 @@
 }
 
 
-.accordion__icon {
-    margin-left: auto;
-    transition: 0.6s ease;
-}
-
-.rotate {
-    transform: rotate(90deg);
-}
 
 .accordion__content {
 
-    background-color: white;
-    overflow: hidden;
+    background-color: rgb(150, 179, 168);
     transition: max-height 0.6s ease;
     border: black;
+    z-index: 100;
+    display: none;
+
 
 }
+
+.accordion--active .accordion__content{
+    display: flex;
+
+} 
+
+
 
 .accordion__text {
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 14px;
     padding: 14px;
+    position: relative; right: -225px;
+    
+    
  }
- /* .lowerpart {
-   display: block;
-   margin: 50px auto;
-   width: 40%;
-   padding: 25px;
-    
-     
-    
  
-   
-} */
-
-
-/* .lowerrightpart{
-    display: block;
-    margin: 50px auto;
-    width: 15%;
-    height: 50%;
-} */
-
-  
-/*.buttons {
-    padding: 50px 100px;
-    overflow: hidden; /* for clearfix */
-   
-   .btn1, .btn2 {
-     color: black;
-     font-size: 20px;
-     padding: 10px;
-     border-radius: 10px;
-     margin: 230px;
-     position: static;
-     background: linear-gradient(#fff, #2a9d8f);
      
+  .btn1 {
      
-   }
-   /* .btn1 {
-    width: 150px;
-    height: 30px;
-    border-radius: 25px;
     background: linear-gradient(#fff, #2a9d8f);
-    font-size: 20px;
     color: black;
-    margin: 5px;
-    padding: 25px;
+    font-size: 20px;
+    margin: 50px;
+    position: relative; right: -1150px;
+    position: relative; top: -350px;
+    height: 100px;
+    width: 500px;
+      
     
-    margin-left: 750px;
-    
-     */
+  }
 
-     
-   /* }
-   .btn2 {
-    width: 150px;
-    height: 30px;
-    border-radius: 25px;
+
+  .btn2 {
+    
     background: linear-gradient(#fff, #2a9d8f);
-    font-size: 20px;
     color: black;
-    margin: 5px;
-    padding: 25px;
-    margin-left: 350px;
-   
+    font-size: 21.5px;
+    margin: 50px;
+    position: relative; top: -700px;
+    position: relative; right: -1150px;
+    height: 100px;
+    width: 500px;
     
-    
-    
-   }
- */
+
+  }

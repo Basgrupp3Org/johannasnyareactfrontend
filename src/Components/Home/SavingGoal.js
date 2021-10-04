@@ -16,6 +16,7 @@ export default function SavingGoal(props) {
                 <label className="savinggoal__title_label">Sparmål</label>
             </div>
 
+
             <div className="savinggoal__contentdiv">
 
                 {savingGoal.map((x, i) => (
@@ -25,6 +26,7 @@ export default function SavingGoal(props) {
                 ))}
 
             </div>
+
 
         </div>
     )

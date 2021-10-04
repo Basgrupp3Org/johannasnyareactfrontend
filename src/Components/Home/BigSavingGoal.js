@@ -16,6 +16,7 @@ export default function BigSavingGoal(props) {
         return (100 * partialValue) / totalValue;
     }
     return (
+
         <div className="bigsavinggoal__fullpage">
             <div className="bigsavinggoal__headerdiv">
                 <label className="bigsavinggoal__title_label">Sparmål</label>
@@ -35,5 +36,6 @@ export default function BigSavingGoal(props) {
                 }
             </div>
         </div>
+
     )
 }
