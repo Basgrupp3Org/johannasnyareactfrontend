@@ -34,47 +34,51 @@ export default function Budgets() {
       </div>
       <div className="history-table">
         <table>
-          <tr>
-            <th>Inkomster</th>
-            <th>Fasta Kostnader</th>
-            <th>Sparmål</th>
-            <th>Rörliga Kostnader</th>
-            <th>Totalt</th>
-            <th>Obudgeterat</th>
-          </tr>
-          <tr>
-            <td>36000</td>
-            <td>Skatt - 10800</td>
-            <td>Resa - 1000</td>
-            <td>Mat - 5000</td>
-            <td>17800</td>
-            <td>9 200 SEK</td>
-          </tr>
+          <thead>
+            <tr>
+              <th>Inkomster</th>
+              <th>Fasta Kostnader</th>
+              <th>Sparmål</th>
+              <th>Rörliga Kostnader</th>
+              <th>Totalt</th>
+              <th>Obudgeterat</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>36000</td>
+              <td>Skatt - 10800</td>
+              <td>Resa - 1000</td>
+              <td>Mat - 5000</td>
+              <td>17800</td>
+              <td>9 200 SEK</td>
+            </tr>
 
-          <tr>
-            <td></td>
-            <td>Hyra - 3000</td>
-            <td></td>
-            <td>Nöje - 3000</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>Lån - 1000</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>Fordon - 3000</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
+            <tr>
+              <td></td>
+              <td>Hyra - 3000</td>
+              <td></td>
+              <td>Nöje - 3000</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Lån - 1000</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Fordon - 3000</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
         </table>
       </div>
     </>
